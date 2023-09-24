@@ -1,8 +1,379 @@
 ﻿
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_LayoutSite.cshtml";
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aroma Shop - Login</title>
+    <link rel="icon" href="img/Fevicon.png" type="image/png">
+    <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/vendors/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/vendors/linericon/style.css">
+    <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/vendors/nice-select/nice-select.css">
+    <link rel="stylesheet" href="/vendors/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<h2>Index</h2>
 
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand logo_h" href="index.html"><img src="/img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                   aria-expanded="false">Shop</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="/shop">Products</a></li>
+                                    <!-- <li class="nav-item"><a class="nav-link" href="single-product.html">Blog Details</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="checkout.html">Product Checkout</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmation</a></li> -->
+
+                                    <li class="nav-item"><a class="nav-link" href="/cart">Cart</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                   aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item active submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                   aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+
+
+
+
+                                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Tracking</a></li>
+
+
+
+
+
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="/wishlist">Wishlist</a></li>
+                        </ul>
+
+                        <ul class="nav-shop">
+
+                            <li class="nav-item"><a href="/cart"><button><i class="ti-shopping-cart"></i><span class="nav-shop__circle"></span></button></a> </li>
+                            <li class="nav-item"><a class="button button-header" href="/shop">Buy Now</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function clearSessionStorage() {
+            sessionStorage.clear();
+        }
+
+    </script>
+
+    <main class="site-main">
+
+
+        <section class="hero-banner">
+
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-interval="2000">
+                        <img src="/productImages/1682925461801.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>aroma</h5>
+                            <a href="/offer/flat 20/aroma20">Shop Now</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+
+
+
+
+
+
+
+            <!-- <div class="container">
+              <div class="row no-gutters align-items-center pt-60px">
+                <div class="col-5 d-none d-sm-block">
+                  <div class="hero-banner__img">
+                    <img class="img-fluid" src="img/home/hero-banner.png" alt="">
+                  </div>
+                </div>
+                <div class="col-sm-7 col-lg-6 offset-lg-1 pl-4 pl-md-5 pl-lg-0">
+                  <div class="hero-banner__content">
+                    <h4>Shop is fun</h4>
+                    <h1>Browse Our Premium Product</h1>
+                    <p>Us which over of signs divide dominion deep fill bring they're meat beho upon own earth without morning over third. Their male dry. They are great appear whose land fly grass.</p>
+                    <a class="button button-hero" href="#">Browse Now</a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+        </section>
+        <!--================ Hero banner start =================-->
+        <!--================ Hero Carousel start =================-->
+        <!-- <section class="section-margin mt-0">
+          <div class="owl-carousel owl-theme hero-carousel">
+            <div class="hero-carousel__slide">
+              <img src="img/home/hero-slide1.png" alt="" class="img-fluid">
+              <a href="#" class="hero-carousel__slideOverlay">
+                <h3>Wireless Headphone</h3>
+                <p>Accessories Item</p>
+              </a>
+            </div>
+            <div class="hero-carousel__slide">
+              <img src="img/home/hero-slide2.png" alt="" class="img-fluid">
+              <a href="#" class="hero-carousel__slideOverlay">
+                <h3>Wireless Headphone</h3>
+                <p>Accessories Item</p>
+              </a>
+            </div>
+            <div class="hero-carousel__slide">
+              <img src="img/home/hero-slide3.png" alt="" class="img-fluid">
+              <a href="#" class="hero-carousel__slideOverlay">
+                <h3>Wireless Headphone</h3>
+                <p>Accessories Item</p>
+              </a>
+            </div>
+          </div>
+        </section> -->
+        <!--================ Hero Carousel end =================-->
+        <!-- ================ trending product section start ================= -->
+        <section class="section-margin calc-60px">
+            <div class="container">
+                <div class="section-intro pb-60px">
+                    <p>Popular Item in the market</p>
+                    <h2>Trending <span class="section-intro__style">Product</span></h2>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="card text-center card-product">
+                            <div class="card-product__img">
+                                <a href="/productView/644b9fc5f9806516c86147b4"><img class="card-img" src="/productImages/1682677701207.jpg" alt=""></a>
+                                <ul class="card-product__imgOverlay">
+
+                                    <li><a href="/productView/644b9fc5f9806516c86147b4"><button><i class="ti-search"></i></button></a></li>
+                                    <li><button onclick="addToCart('644b9fc5f9806516c86147b4')"><i class="ti-shopping-cart"></i></button></li>
+                                    <li><button><i class="ti-heart"></i></button></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <p></p>
+                                <h4 class="card-product__title"><a href="/productView/644b9fc5f9806516c86147b4">Fire-Boltt Phoenix </a></h4>
+                                <p class="card-product__price"><span>&#8377 </span>1999</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="card text-center card-product">
+                            <div class="card-product__img">
+                                <a href="/productView/644ba10bf9806516c8614803"><img class="card-img" src="/productImages/1682678027316.jpg" alt=""></a>
+                                <ul class="card-product__imgOverlay">
+
+                                    <li><a href="/productView/644ba10bf9806516c8614803"><button><i class="ti-search"></i></button></a></li>
+                                    <li><button onclick="addToCart('644ba10bf9806516c8614803')"><i class="ti-shopping-cart"></i></button></li>
+                                    <li><button><i class="ti-heart"></i></button></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <p></p>
+                                <h4 class="card-product__title"><a href="/productView/644ba10bf9806516c8614803">Noise Pulse Go</a></h4>
+                                <p class="card-product__price"><span>&#8377 </span>1599</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="card text-center card-product">
+                            <div class="card-product__img">
+                                <a href="/productView/644ba275f9806516c861483e"><img class="card-img" src="/productImages/1682678389785.jpg" alt=""></a>
+                                <ul class="card-product__imgOverlay">
+
+                                    <li><a href="/productView/644ba275f9806516c861483e"><button><i class="ti-search"></i></button></a></li>
+                                    <li><button onclick="addToCart('644ba275f9806516c861483e')"><i class="ti-shopping-cart"></i></button></li>
+                                    <li><button><i class="ti-heart"></i></button></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <p></p>
+                                <h4 class="card-product__title"><a href="/productView/644ba275f9806516c861483e">boAt Xtend</a></h4>
+                                <p class="card-product__price"><span>&#8377 </span>1099</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="card text-center card-product">
+                            <div class="card-product__img">
+                                <a href="/productView/644ba8d7f9806516c8614946"><img class="card-img" src="/productImages/1682680023474.jpg" alt=""></a>
+                                <ul class="card-product__imgOverlay">
+
+                                    <li><a href="/productView/644ba8d7f9806516c8614946"><button><i class="ti-search"></i></button></a></li>
+                                    <li><button onclick="addToCart('644ba8d7f9806516c8614946')"><i class="ti-shopping-cart"></i></button></li>
+                                    <li><button><i class="ti-heart"></i></button></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <p></p>
+                                <h4 class="card-product__title"><a href="/productView/644ba8d7f9806516c8614946">Fire-Boltt Ninja 3 1.83</a></h4>
+                                <p class="card-product__price"><span>&#8377 </span>1499</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <!-- ================ trending product section end ================= -->
+        <!-- ================ offer section start ================= -->
+        <section class="offer" id="parallax-1" data-anchor-target="#parallax-1" data-300-top="background-position: 20px 30px" data-top-bottom="background-position: 0 20px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5">
+                        <div class="offer__content text-center">
+                            <h3>Up To 50% Off</h3>
+                            <h4>Winter Sale</h4>
+                            <p>Him she'd let them sixth saw light</p>
+                            <a class="button button--active mt-3 mt-xl-4" href="#">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================ offer section end ================= -->
+
+        <section class="section-margin calc-60px">
+            <div class="container">
+                <div class="section-intro pb-60px">
+                    <p>Popular Item in the market</p>
+                    <h2>Best <span class="section-intro__style">Sellers</span></h2>
+                </div>
+                <div class="owl-carousel owl-theme" id="bestSellerCarousel">
+
+                    <div class="card text-center card-product">
+                        <div class="card-product__img">
+                            <img class="img-fluid" src="/productImages/1682677701207.jpg" alt="">
+                            <ul class="card-product__imgOverlay">
+                                <li><a href="/productView/644b9fc5f9806516c86147b4"><button><i class="ti-search"></i></button></a></li>
+                                <li><button onclick="addToCart('644b9fc5f9806516c86147b4')"><i class="ti-shopping-cart"></i></button></li>
+                                <li><button><i class="ti-heart"></i></button></li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <p>Accessories</p>
+                            <h4 class="card-product__title"><a href="/productView/644b9fc5f9806516c86147b4">Fire-Boltt Phoenix </a></h4>
+                            <p class="card-product__price"><span>&#8377 </span>1999</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-center card-product">
+                        <div class="card-product__img">
+                            <img class="img-fluid" src="/productImages/1682678027316.jpg" alt="">
+                            <ul class="card-product__imgOverlay">
+                                <li><a href="/productView/644ba10bf9806516c8614803"><button><i class="ti-search"></i></button></a></li>
+                                <li><button onclick="addToCart('644ba10bf9806516c8614803')"><i class="ti-shopping-cart"></i></button></li>
+                                <li><button><i class="ti-heart"></i></button></li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <p>Accessories</p>
+                            <h4 class="card-product__title"><a href="/productView/644ba10bf9806516c8614803">Noise Pulse Go</a></h4>
+                            <p class="card-product__price"><span>&#8377 </span>1599</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-center card-product">
+                        <div class="card-product__img">
+                            <img class="img-fluid" src="/productImages/1682678389785.jpg" alt="">
+                            <ul class="card-product__imgOverlay">
+                                <li><a href="/productView/644ba275f9806516c861483e"><button><i class="ti-search"></i></button></a></li>
+                                <li><button onclick="addToCart('644ba275f9806516c861483e')"><i class="ti-shopping-cart"></i></button></li>
+                                <li><button><i class="ti-heart"></i></button></li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <p>Accessories</p>
+                            <h4 class="card-product__title"><a href="/productView/644ba275f9806516c861483e">boAt Xtend</a></h4>
+                            <p class="card-product__price"><span>&#8377 </span>1099</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-center card-product">
+                        <div class="card-product__img">
+                            <img class="img-fluid" src="/productImages/1682680023474.jpg" alt="">
+                            <ul class="card-product__imgOverlay">
+                                <li><a href="/productView/644ba8d7f9806516c8614946"><button><i class="ti-search"></i></button></a></li>
+                                <li><button onclick="addToCart('644ba8d7f9806516c8614946')"><i class="ti-shopping-cart"></i></button></li>
+                                <li><button><i class="ti-heart"></i></button></li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <p>Accessories</p>
+                            <h4 class="card-product__title"><a href="/productView/644ba8d7f9806516c8614946">Fire-Boltt Ninja 3 1.83</a></h4>
+                            <p class="card-product__price"><span>&#8377 </span>1499</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendors/skrollr.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+    <script src="vendors/jquery.ajaxchimp.min.js"></script>
+    <script src="vendors/mail-script.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+</html>
