@@ -72,7 +72,6 @@ F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\bin\System.Web.WebPages.Razor.xml
 F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\bin\Newtonsoft.Json.xml
 F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\bin\Antlr3.Runtime.pdb
 F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\obj\Debug\Web_App01.csproj.AssemblyReference.cache
 F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\obj\Debug\Web_App01.csproj.CoreCompileInputs.cache
 F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\obj\Debug\Web_App01.csproj.CopyComplete
 F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\obj\Debug\Web_App01.dll
