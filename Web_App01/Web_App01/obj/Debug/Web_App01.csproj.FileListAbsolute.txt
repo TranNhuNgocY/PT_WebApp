@@ -76,3 +76,8 @@ F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\obj\Debug\Web_App01.csproj.CoreCom
 F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\obj\Debug\Web_App01.csproj.CopyComplete
 F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\obj\Debug\Web_App01.dll
 F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\obj\Debug\Web_App01.pdb
+F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\bin\EntityFramework.dll
+F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\bin\EntityFramework.SqlServer.dll
+F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\bin\EntityFramework.xml
+F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\bin\EntityFramework.SqlServer.xml
+F:\Dự Án Web\PT_WebApp\Web_App01\Web_App01\obj\Debug\Web_App01.csproj.AssemblyReference.cache
